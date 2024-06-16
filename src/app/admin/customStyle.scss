@@ -1,0 +1,126 @@
+.create_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100000;
+}
+.create_wrap {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+  padding:20px 0;
+  max-height: 90%;
+  overflow: auto;
+}
+.create_close_wrap {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.dropzone_container {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed #cccccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dropzone_image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+.create_input {
+  font-family: "SF Pro";
+  width: 70%;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1.5px solid #000;
+  border-radius: 8px;
+  box-shadow: 2.5px 3px 0 #000;
+  outline: none;
+  transition: ease 0.25s;
+  min-height: 40px;
+}
+
+.create_input:focus {
+  box-shadow: 5.5px 7px 0 black;
+}
+.create_input_container{
+  display: flex;
+  justify-content: center;
+}
+.create_button {
+  height: 40px;
+  width: 150px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+.btn_create_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.create_btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+  font-family: "SF Pro";
+}
+
+.create_type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.create_button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color:black;
+  border: none;
+}
+
+.create_type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}

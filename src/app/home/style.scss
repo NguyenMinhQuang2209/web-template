@@ -1,0 +1,166 @@
+.hs-text-custom{
+  & > h2{
+      color:white;
+      font-size: 40px;
+      & > span{
+          color:orange;
+          font-size: 60px;
+      }
+  }
+   & > p{
+      color:white;
+      font-size: 17px;
+   }
+}
+.bg-custom{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img-custom-bg{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 0;
+  overflow: hidden;
+}
+.img-thumb-custom{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 0;
+  overflow: hidden;
+  & > img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+.top-game-thumbnail{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 0;
+  overflow: hidden;
+  & > img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+.carousel-container{
+  z-index: 0;
+}
+.custom-caption {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom:0;
+  right:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link{
+  text-decoration: none;
+}
+.user-infor{
+  min-width: 130px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.user-infor-img{
+  width: 40px;
+  & > img{
+      width: 35px; 
+      max-width: 35px;
+      height: 35px;
+      border-radius: 50%;
+  }
+}
+.user-infor-name{
+  flex:1;
+  font-size: 13.5px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+.user-list{
+  position: absolute;
+  top:110%;
+  right:-20px;
+  width: 180px;
+  background-color: white;
+  z-index: 9999;
+  border-radius: 10px;
+  padding:10px;
+  border:1px solid rgba(0,0,0,0.3);
+  display: none;
+}
+.user-infor-item{
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.user-infor-link{
+  & > div{
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+}
+.user-infor-link:last-child{
+  & >div{
+      border-bottom: none;
+  }
+}
+.user-infor:hover .user-list{
+  display: block;
+}
+.user-infor::after{
+  content:"";
+  position: absolute;
+  top:30%;
+  left:0;
+  right:0;
+  height: 50px;
+  background-color: transparent;
+}
+.mobile_custom{
+  margin-top: -40px;
+  position: relative;
+}
+.mobile_nav{
+  position: absolute;
+  top:100%;
+  right:-0px;
+  width: 200px;
+  padding:5px 10px;
+  background-color: white;
+  color:black;
+  z-index: 1000;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+}
+.mobile_nav_login{
+  width: 100%;
+}
+.mobile_nav_login_item{
+  width: 100%;
+  font-size: 19px;
+  height: 38px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  color:black;
+}
